@@ -13,3 +13,7 @@ body{
     transform: translate(-50%,-50%);
     font-size: 100px;
 }
+h1{
+    font-size: 70px;
+    text-align: center;
+}
