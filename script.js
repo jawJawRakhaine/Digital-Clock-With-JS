@@ -5,6 +5,16 @@ function displayTime() {
   var seconds = dateTime.getSeconds();
   var session = document.getElementById("session");
 
+  if (hours < 10) {
+    hours = dateTime.getHours();
+  }
+  if (minutes < 10) {
+    minutes = dateTime.getMinutes();
+  }
+  if (seconds < 10) {
+    seconds = "0" + dateTime.getSeconds();
+  }
+
   if (hours >= 12) {
     session.innerHTML = "PM";
   } else {
