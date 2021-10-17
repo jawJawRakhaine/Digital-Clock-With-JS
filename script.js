@@ -6,10 +6,10 @@ function displayTime() {
   var session = document.getElementById("session");
 
   if (hours < 10) {
-    hours = dateTime.getHours();
+    hours = "0" + dateTime.getHours();
   }
   if (minutes < 10) {
-    minutes = dateTime.getMinutes();
+    minutes = "0" + dateTime.getMinutes();
   }
   if (seconds < 10) {
     seconds = "0" + dateTime.getSeconds();
